@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'norse'; /* This is the nickname you give the font */
+    src: url('./fonts/Norse.otf') format('truetype'); /* Path to the file */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,14 +62,17 @@ html, body {
     z-index: 10;
 }
 
+.logo-box span {
+    font-family: 'norse', sans-serif; /* Use your nickname here */
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
 .logo-img {
-    /* 1. Force the height to match the 20% box exactly */
     height: 80%; 
-    
-    /* 2. Tell the width to adjust automatically to keep proportions */
     width: auto; 
-    
     margin-right: 15px;
-    
     display: block;
 }
