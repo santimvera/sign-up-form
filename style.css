@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'norse';
-    /* This is the nickname you give the font */
     src: url('./fonts/Norse.otf') format('truetype');
-    /* Path to the file */
     font-weight: normal;
     font-style: normal;
 }
@@ -100,10 +98,34 @@ body {
 .myForm {
     padding: 5%;
     flex: 1;
-   
+    
 }
 
 .actions {
 
     flex: 1;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;                      
+    max-width: 600px;               
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
